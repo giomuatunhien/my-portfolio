@@ -80,18 +80,18 @@ const observerOptions = {
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
-        }
-    });
-}, observerOptions);
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('fade-in-up');
+//         }
+//     });
+// }, observerOptions);
 
-// Observe elements for animation
-document.querySelectorAll('.skill-category, .project-card, .about-content, .contact-content').forEach(el => {
-    observer.observe(el);
-});
+// // Observe elements for animation
+// document.querySelectorAll('.skill-category, .about-content, .contact-content').forEach(el => {
+//     observer.observe(el);
+// });
 
 // Typing animation for hero title
 function typeWriter(element, text, speed = 100) {
@@ -156,24 +156,112 @@ document.querySelectorAll('.skill-item').forEach(skill => {
     });
 });
 
-// Project card tilt effect
+// Project video hover control - Enhanced for better compatibility
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, setting up video controls');
+    
+    const projectCards = document.querySelectorAll('.project-card');
+    console.log('Found project cards:', projectCards.length);
+    
+    projectCards.forEach((card, index) => {
+        const video = card.querySelector('video');
+        
+        if (video) {
+            console.log(`Setting up video ${index + 1}:`, video.src);
+            
+            // Đảm bảo video được setup đúng
+            video.muted = true; // Đảm bảo muted để bypass autoplay policy
+            video.controls = false;
+            
+            // Event listeners cho video
+            video.addEventListener('loadeddata', function() {
+                console.log(`Video ${index + 1} loaded successfully`);
+            });
+
+            video.addEventListener('canplaythrough', function() {
+                console.log(`Video ${index + 1} can play through`);
+            });
+
+            video.addEventListener('error', function(e) {
+                console.error(`Video ${index + 1} error:`, e);
+            });
+
+            // Hover events với autoplay control
+            card.addEventListener('mouseenter', function() {
+                console.log(`Hover enter on card ${index + 1}`);
+                
+                // Thêm autoplay attribute và reset video về đầu
+                video.setAttribute('autoplay', '');
+                video.currentTime = 0;
+                
+                // Thử play với multiple fallbacks
+                const playVideo = () => {
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            console.log(`Video ${index + 1} playing successfully with autoplay`);
+                        }).catch(error => {
+                            console.error(`Video ${index + 1} play failed:`, error);
+                            
+                            // Fallback: thử force muted và play lại
+                            video.muted = true;
+                            setTimeout(() => {
+                                video.play().catch(e => {
+                                    console.error(`Video ${index + 1} retry failed:`, e);
+                                });
+                            }, 100);
+                        });
+                    }
+                };
+                
+                // Nếu video chưa ready, chờ và thử lại
+                if (video.readyState >= 3) {
+                    playVideo();
+                } else {
+                    video.addEventListener('canplaythrough', playVideo, { once: true });
+                }
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                console.log(`Hover leave on card ${index + 1}`);
+                
+                // Xóa autoplay attribute và dừng video
+                video.removeAttribute('autoplay');
+                video.pause();
+                video.currentTime = 0;
+                
+                console.log(`Video ${index + 1} autoplay removed`);
+            });
+
+            // Initial setup - preload video
+            if (video.readyState < 2) {
+                video.load();
+            }
+        } else {
+            console.log(`No video found in card ${index + 1}`);
+        }
+    });
+});
+
+// Project card tilt effect - Modified to not interfere with video
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mousemove', function(e) {
-        const rect = this.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        // const rect = this.getBoundingClientRect();
+        // const x = e.clientX - rect.left;
+        // const y = e.clientY - rect.top;
         
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+        // const centerX = rect.width / 2;
+        // const centerY = rect.height / 2;
         
-        const rotateX = (y - centerY) / 10;
-        const rotateY = (centerX - x) / 10;
+        // const rotateX = (y - centerY) / 10;
+        // const rotateY = (centerX - x) / 10;
         
-        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+        this.style.transform = `perspective(1000px) scale3d(1.05, 1.05, 1.05)`;
     });
     
     card.addEventListener('mouseleave', function() {
-        this.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+        this.style.transform = 'perspective(1000px) scale3d(1, 1, 1)';
     });
 });
 

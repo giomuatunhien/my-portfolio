@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Devicon CDN for C#, SQL, etc. icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -17,19 +19,19 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Trang chủ</a>
+                    <a href="#home" class="nav-link">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">Giới thiệu</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Kỹ năng</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Dự án</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Liên hệ</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -48,16 +50,16 @@
                     <h1 class="hero-title">Hi, I'm <span class="highlight">Đồng Mạnh Cường</span></h1>
                     <p class="hero-subtitle">Intern Game Developer (Unity/C#)</p>
                     <p class="hero-description">
-                        I am a passionate game developer focusing on Unity and C#. I love turning creative ideas into interactive experiences.<br>
-                        Currently, I am an intern eager to learn, improve my skills, and contribute to real game projects. My goal is to become a professional game developer and bring joy to players through my work.
+                        I’m an aspiring Game Developer with a big passion for bringing ideas to life through games.  
+I’m currently at the beginning of my journey, learning and building small projects with Unity and C#.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
-                        <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+                    <img src="images/XPProper.png" alt="Profile Picture" class="profile-img" onerror="this.src='https://via.placeholder.com/300x300/667eea/fff?text=Profile'">
                 </div>
             </div>
         </div>
@@ -66,7 +68,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Giới thiệu về tôi</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
@@ -77,17 +79,17 @@
                     </p>
                     <div class="about-stats">
                         <div class="stat">
-                            <h3>5+</h3>
+                            <h3>3+</h3>
                             <p>Mini games & prototypes</p>
                         </div>
                         <div class="stat">
-                            <h3>1+</h3>
-                            <p>Year learning Unity</p>
+                            <h3>3+</h3>
+                            <p>Months learning Unity</p>
                         </div>
-                        <div class="stat">
+                        <!-- <div class="stat">
                             <h3>6+</h3>
                             <p>Technologies used</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -97,62 +99,36 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Kỹ năng của tôi</h2>
+            <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>PROGRAMMING LANGUAGES</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                            <i class="devicon-c-plain colored" style="font-size: 24px;"></i>
+                            <span>C/C++</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                            <i class="devicon-csharp-plain colored" style="font-size: 24px;"></i>
+                            <span>C#</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vue"></i>
-                            <span>Vue.js</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
+                            <i class="devicon-python-plain colored" style="font-size: 24px;"></i>
                             <span>Python</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
+                            <i class="devicon-microsoftsqlserver-plain colored" style="font-size: 24px;"></i>
+                            <span>SQL Server</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Express.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Firebase</span>
+                            <i class="devicon-nodejs-plain colored" style="font-size: 24px;"></i>
+                            <span>Node.js</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Công cụ & Khác</h3>
+                    <h3>Tools & Others</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fab fa-git-alt"></i>
@@ -163,16 +139,32 @@
                             <span>GitHub</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-figma"></i>
-                            <span>Figma</span>
+                            <i class="devicon-postman-plain colored" style="font-size: 24px;"></i>
+                            <span>Postman</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
+                            <i class="devicon-postgresql-plain colored" style="font-size: 24px;"></i>
+                            <span>PostgreSQL</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>AWS</span>
+                            <i class="devicon-unity-plain colored" style="font-size: 24px;"></i>
+                            <span>Unity</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-sdl-plain colored" style="font-size: 24px;"></i>
+                            <span>SDL2</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-cocos2d-plain colored" style="font-size: 24px;"></i>
+                            <span>cocos2d</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-virtualbox-plain colored" style="font-size: 24px;"></i>
+                            <span>VirtualBox</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-pygame-plain colored" style="font-size: 24px;"></i>
+                            <span>PyGame</span>
                         </div>
                     </div>
                 </div>
@@ -183,104 +175,25 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Dự án tiêu biểu</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project1.jpg" alt="E-commerce Website">
+                        <img src="images/galaxy-s24-plus-tim_2.webp" alt="Luân Hành Tứ Giới Screenshot" onerror="this.src='https://via.placeholder.com/640x360/444/fff?text=Game+Screenshot'">
+                        <!-- Video preview (sẽ phát khi hover) -->
+                        <video src="images/14035-254146872_tiny.mp4" muted playsinline preload="auto" loop webkit-playsinline></video>
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>E-commerce Website</h3>
-                        <p>Website thương mại điện tử hoàn chỉnh với giỏ hàng, thanh toán và quản lý sản phẩm.</p>
+                        <h3>Luân Hành Tứ Giới</h3>
+                        <p>Game kết hợp giữa action và match-3.<br>
+                        <a href="https://your-game-link.com" target="_blank" style="color: var(--primary-color); text-decoration: underline;">Chơi thử game</a> &nbsp;|&nbsp; 
+                        <a href="https://github.com/giomuatunhien" target="_blank" style="color: var(--primary-color); text-decoration: underline;">Xem mã nguồn</a>
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project2.jpg" alt="Task Management App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>Ứng dụng quản lý công việc với tính năng drag & drop, notification và team collaboration.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project3.jpg" alt="Weather App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Forecast App</h3>
-                        <p>Ứng dụng dự báo thời tiết với giao diện đẹp và tính năng tìm kiếm theo vị trí.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Weather API</span>
-                            <span class="tech-tag">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project4.jpg" alt="Blog Platform">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Blog Platform</h3>
-                        <p>Nền tảng blog với editor WYSIWYG, hệ thống comments và quản lý user.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Prisma</span>
-                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
                         </div>
                     </div>
                 </div>
@@ -291,64 +204,62 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Liên hệ với tôi</h2>
+            <h2 class="section-title">Contact Me</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Thông tin liên hệ</h3>
-                    <p>Hãy liên hệ với tôi để thảo luận về các dự án hoặc cơ hội hợp tác!</p>
-                    
+                    <h3>Contact Information</h3>
                     <div class="contact-items">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>your.email@example.com</p>
+                                <p>nq2019.dongmanhcuong020304@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
                             <div>
                                 <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/yourprofile</p>
+                                <p>https://linkedin.com/in/cuong23204</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-github"></i>
                             <div>
                                 <h4>GitHub</h4>
-                                <p>github.com/yourusername</p>
+                                <p>https://github.com/giomuatunhien</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <h4>Điện thoại</h4>
-                                <p>+84 xxx xxx xxx</p>
+                                <h4>Phone</h4>
+                                <p>+84 909106288</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3>Gửi tin nhắn</h3>
+                    <h3>Send a Message</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Họ và tên</label>
+                            <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address.">
                         </div>
                         <div class="form-group">
-                            <label for="subject">Chủ đề</label>
+                            <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Tin nhắn</label>
+                            <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -361,15 +272,51 @@
             <div class="footer-content">
                 <p>&copy; 2025 Đồng Mạnh Cường. All rights reserved.</p>
                 <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/cuong23204" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="https://twitter.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a> -->
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function() {
+        emailjs.init('UQEZevo52VPOirnpR'); // Thay YOUR_EMAILJS_USER_ID bằng user ID của bạn trên emailjs.com
+    })();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Xác nhận popup
+                if (!confirm('Bạn có chắc chắn muốn gửi tin nhắn này?')) {
+                    return;
+                }
+                // Lấy dữ liệu form
+                const formData = new FormData(this);
+                const params = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message')
+                };
+                // Gửi qua EmailJS
+                emailjs.send('service_azaga1u', 'template_w3dst0n', params)
+                    .then(function(response) {
+                        alert('Tin nhắn đã được gửi thành công!');
+                        contactForm.reset();
+                    }, function(error) {
+                        alert('Gửi thất bại. Vui lòng thử lại sau!');
+                    });
+            });
+        }
+    });
+    </script>
 </body>
 </html>

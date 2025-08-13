@@ -173,16 +173,17 @@ body {
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    background-color: #667eea;
 }
 
 .btn-primary {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    /* background: rgba(255, 255, 255, 0.2); */
+    color: rgb(255, 255, 255);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .btn-primary:hover {
-    background: rgba(255, 255, 255, 0.3);
+    /* background: rgba(255, 255, 255, 0.3); */
     transform: translateY(-2px);
 }
 
@@ -259,7 +260,7 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -350,10 +351,12 @@ section {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
+
 
 .project-card {
     background: white;
@@ -361,6 +364,9 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    max-width: 420px;
+    width: auto;
+    margin: 0 auto;
 }
 
 .project-card:hover {
@@ -370,15 +376,48 @@ section {
 
 .project-image {
     position: relative;
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #222;
     overflow: hidden;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
+    object-fit: contain;
+    background: #222;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Video ẩn mặc định, chỉ hiện khi hover */
+.project-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Khi hover vào project card */
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.project-card:hover .project-image video {
+    opacity: 1;
+    z-index: 2;
 }
 
 .project-overlay {
@@ -387,16 +426,17 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(102, 126, 234, 0.9);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: var(--transition);
+    pointer-events: none;
 }
 
 .project-card:hover .project-overlay {
-    opacity: 1;
+    opacity: 0;
 }
 
 .project-links {
@@ -702,9 +742,9 @@ html {
     }
 }
 
-.fade-in-up {
+/* .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
-}
+} */
 
 /* Loading animation */
 @keyframes pulse {
