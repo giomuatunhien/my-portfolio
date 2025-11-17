@@ -1,322 +1,430 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Đồng Mạnh Cường</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Devicon CDN for C#, SQL, etc. icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Portfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Homepage</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Portfolio</a>
         </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Hi, I'm <span class="highlight">Đồng Mạnh Cường</span></h1>
-                    <p class="hero-subtitle">Intern Game Developer (Unity/C#)</p>
-                    <p class="hero-description">
-                        I’m an aspiring Game Developer with a big passion for bringing ideas to life through games.  
-I’m currently at the beginning of my journey, learning and building small projects with Unity and C#.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/XPProper.png" alt="Profile Picture" class="profile-img" onerror="this.src='https://via.placeholder.com/300x300/667eea/fff?text=Profile'">
-                </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Đồng Mạnh Cường</span>
+            </h1>
+            <p class="hero-subtitle">Intern Game Developer (Unity/C#)</p>
+            <p class="hero-description">
+              I’m an aspiring Game Developer with a big passion for bringing
+              ideas to life through games. I’m currently at the beginning of my
+              journey, learning and building small projects with Unity and C#.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="images/XPProper.png"
+              alt="Profile Picture"
+              class="profile-img"
+              onerror="this.src='https://via.placeholder.com/300x300/667eea/fff?text=Profile'"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a game developer with a strong passion for technology and creativity. I have experience building small games and prototypes using Unity and C#.
-                    </p>
-                    <p>
-                        My goal is to become a professional game developer, join a creative team, and contribute to building fun and meaningful games for everyone.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Mini games & prototypes</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Months learning Unity</p>
-                        </div>
-                        <!-- <div class="stat">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a game developer with a strong passion for technology and
+              creativity. I have experience building small games and prototypes
+              using Unity and C#.
+            </p>
+            <p>
+              My goal is to become a professional game developer, join a
+              creative team, and contribute to building fun and meaningful games
+              for everyone.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>3+</h3>
+                <p>Mini games & prototypes</p>
+              </div>
+              <div class="stat">
+                <h3>3+</h3>
+                <p>Months learning Unity</p>
+              </div>
+              <!-- <div class="stat">
                             <h3>6+</h3>
                             <p>Technologies used</p>
                         </div> -->
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>PROGRAMMING LANGUAGES</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="devicon-c-plain colored" style="font-size: 24px;"></i>
-                            <span>C/C++</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-csharp-plain colored" style="font-size: 24px;"></i>
-                            <span>C#</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-python-plain colored" style="font-size: 24px;"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-microsoftsqlserver-plain colored" style="font-size: 24px;"></i>
-                            <span>SQL Server</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-nodejs-plain colored" style="font-size: 24px;"></i>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-postman-plain colored" style="font-size: 24px;"></i>
-                            <span>Postman</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-postgresql-plain colored" style="font-size: 24px;"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-unity-plain colored" style="font-size: 24px;"></i>
-                            <span>Unity</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-sdl-plain colored" style="font-size: 24px;"></i>
-                            <span>SDL2</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-cocos2d-plain colored" style="font-size: 24px;"></i>
-                            <span>cocos2d</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-virtualbox-plain colored" style="font-size: 24px;"></i>
-                            <span>VirtualBox</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="devicon-pygame-plain colored" style="font-size: 24px;"></i>
-                            <span>PyGame</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>PROGRAMMING LANGUAGES</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="devicon-c-plain colored" style="font-size: 24px"></i>
+                <span>C/C++</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-csharp-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>C#</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-python-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-microsoftsqlserver-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>SQL Server</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-nodejs-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>Node.js</span>
+              </div>
             </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-postman-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>Postman</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-postgresql-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-unity-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>Unity</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-sdl-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>SDL2</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-cocos2d-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>cocos2d</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-virtualbox-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>VirtualBox</span>
+              </div>
+              <div class="skill-item">
+                <i
+                  class="devicon-pygame-plain colored"
+                  style="font-size: 24px"
+                ></i>
+                <span>PyGame</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/galaxy-s24-plus-tim_2.webp" alt="Luân Hành Tứ Giới Screenshot" onerror="this.src='https://via.placeholder.com/640x360/444/fff?text=Game+Screenshot'">
-                        <!-- Video preview (sẽ phát khi hover) -->
-                        <video src="images/14035-254146872_tiny.mp4" muted playsinline preload="auto" loop webkit-playsinline></video>
-                        <div class="project-overlay">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Luân Hành Tứ Giới</h3>
-                        <p>Game kết hợp giữa action và match-3.<br>
-                        <a href="https://your-game-link.com" target="_blank" style="color: var(--primary-color); text-decoration: underline;">Chơi thử game</a> &nbsp;|&nbsp; 
-                        <a href="https://github.com/giomuatunhien" target="_blank" style="color: var(--primary-color); text-decoration: underline;">Xem mã nguồn</a>
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
-                            <span class="tech-tag">C#</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/galaxy-s24-plus-tim_2.webp"
+                alt="Luân Hành Tứ Giới Screenshot"
+                onerror="this.src='https://via.placeholder.com/640x360/444/fff?text=Game+Screenshot'"
+              />
+              <!-- Video preview (sẽ phát khi hover) -->
+              <video
+                src="images/14035-254146872_tiny.mp4"
+                muted
+                playsinline
+                preload="auto"
+                loop
+                webkit-playsinline
+              ></video>
+              <div class="project-overlay"></div>
             </div>
+            <div class="project-content">
+              <h3>Luân Hành Tứ Giới</h3>
+              <p>
+                Game kết hợp giữa action và match-3.<br />
+                <a
+                  href="https://your-game-link.com"
+                  target="_blank"
+                  style="
+                    color: var(--primary-color);
+                    text-decoration: underline;
+                  "
+                  >Chơi thử game</a
+                >
+                &nbsp;|&nbsp;
+                <a
+                  href="https://github.com/giomuatunhien"
+                  target="_blank"
+                  style="
+                    color: var(--primary-color);
+                    text-decoration: underline;
+                  "
+                  >Xem mã nguồn</a
+                >
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>nq2019.dongmanhcuong020304@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>https://linkedin.com/in/cuong23204</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p>https://github.com/giomuatunhien</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+84 909106288</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>nq2019.dongmanhcuong020304@gmail.com</p>
                 </div>
-                
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address.">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <p>https://linkedin.com/in/cuong23204</p>
                 </div>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <p>https://github.com/giomuatunhien</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+84 909106288</p>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  title="Please enter a valid email address."
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Đồng Mạnh Cường. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/cuong23204" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="https://twitter.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Đồng Mạnh Cường. All rights reserved.</p>
+          <div class="social-links">
+            <a
+              href="https://github.com/giomuatunhien"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/cuong23204"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- <a href="https://twitter.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
                     <a href="https://instagram.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a> -->
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
-    (function() {
-        emailjs.init('UQEZevo52VPOirnpR'); // Thay YOUR_EMAILJS_USER_ID bằng user ID của bạn trên emailjs.com
-    })();
+      (function () {
+        emailjs.init("UQEZevo52VPOirnpR"); // Thay YOUR_EMAILJS_USER_ID bằng user ID của bạn trên emailjs.com
+      })();
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const contactForm = document.getElementById('contactForm');
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contactForm");
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Xác nhận popup
-                if (!confirm('Bạn có chắc chắn muốn gửi tin nhắn này?')) {
-                    return;
-                }
-                // Lấy dữ liệu form
-                const formData = new FormData(this);
-                const params = {
-                    name: formData.get('name'),
-                    email: formData.get('email'),
-                    subject: formData.get('subject'),
-                    message: formData.get('message')
-                };
-                // Gửi qua EmailJS
-                emailjs.send('service_azaga1u', 'template_w3dst0n', params)
-                    .then(function(response) {
-                        alert('Tin nhắn đã được gửi thành công!');
-                        contactForm.reset();
-                    }, function(error) {
-                        alert('Gửi thất bại. Vui lòng thử lại sau!');
-                    });
-            });
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Xác nhận popup
+            if (!confirm("Bạn có chắc chắn muốn gửi tin nhắn này?")) {
+              return;
+            }
+            // Lấy dữ liệu form
+            const formData = new FormData(this);
+            const params = {
+              name: formData.get("name"),
+              email: formData.get("email"),
+              subject: formData.get("subject"),
+              message: formData.get("message"),
+            };
+            // Gửi qua EmailJS
+            emailjs.send("service_azaga1u", "template_w3dst0n", params).then(
+              function (response) {
+                alert("Tin nhắn đã được gửi thành công!");
+                contactForm.reset();
+              },
+              function (error) {
+                alert("Gửi thất bại. Vui lòng thử lại sau!");
+              }
+            );
+          });
         }
-    });
+      });
     </script>
-</body>
+  </body>
 </html>
