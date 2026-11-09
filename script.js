@@ -19,6 +19,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
+    // Placeholder links (href="#", e.g. game links not added yet) do nothing
+    if (this.getAttribute("href") === "#") return;
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
       const navbar = document.querySelector(".navbar");
@@ -117,35 +119,7 @@ window.addEventListener("load", () => {
   typeWriter(heroTitle, originalText, 50);
 });
 
-// Contact form handling
-const contactForm = document.getElementById("contactForm");
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(this);
-    const formObject = {};
-    formData.forEach((value, key) => {
-      formObject[key] = value;
-    });
-
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = "Đang gửi...";
-    submitBtn.disabled = true;
-
-    // Simulate API call
-    setTimeout(() => {
-      alert("Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.");
-      this.reset();
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
-    }, 2000);
-  });
-}
+// Contact form: handled by EmailJS in index.html
 
 // Skills animation on hover
 document.querySelectorAll(".skill-item").forEach((skill) => {
@@ -190,6 +164,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Hover events với autoplay control
       card.addEventListener("mouseenter", function () {
+        // No video file yet: keep showing the thumbnail
+        if (card.classList.contains("no-video")) return;
         console.log(`Hover enter on card ${index + 1}`);
 
         // Thêm autoplay attribute và reset video về đầu
@@ -414,6 +390,7 @@ style.textContent = `
         --text-color: #ffffff;
         --text-light: #cccccc;
         --border-color: #404040;
+        --card-bg: #262626;
     }
     
     .nav-link.active {

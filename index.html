@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Devicon CDN for C#, SQL, etc. icons -->
+  <!-- Devicon CDN for C#, Unity, Godot, etc. icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
 </head>
 
@@ -20,21 +20,13 @@
         <a href="#home">Portfolio</a>
       </div>
       <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">Homepage</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#skills" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -52,11 +44,12 @@
           <h1 class="hero-title">
             Hi, I'm <span class="highlight">Đồng Mạnh Cường</span>
           </h1>
-          <p class="hero-subtitle">Intern Game Developer (Unity/C#)</p>
+          <p class="hero-subtitle">Game Developer at MGIF · Unity &amp; Godot (C#)</p>
           <p class="hero-description">
-            I’m an aspiring Game Developer with a big passion for bringing
-            ideas to life through games. I’m currently at the beginning of my
-            journey, learning and building small projects with Unity and C#.
+            I build and ship mobile games. Over the past 6 months at MGIF I have
+            taken four games from the first commit to release on Google Play,
+            covering gameplay, UI, level design tools and SDK integration (ads,
+            analytics, remote config).
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -64,8 +57,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="multimedia/mainimage.png" alt="Profile Picture" class="profile-img"
-            onerror="this.src='https://via.placeholder.com/300x300/667eea/fff?text=Profile'" />
+          <img src="multimedia/mainimage.png" alt="Profile Picture" class="profile-img" />
         </div>
       </div>
     </div>
@@ -78,19 +70,289 @@
       <div class="about-content">
         <div class="about-text">
           <p>
-            I am a game developer with a strong passion for technology and
-            creativity. I have experience building small games and prototypes
-            using Unity and C#.
+            I am a game developer with about 9 months of hands-on experience in
+            Unity and C#, and I recently shipped a 3D game in Godot 4 (.NET).
+            I enjoy the whole loop of making a game: prototyping the core
+            mechanic, tuning how it feels, building the tools to produce
+            levels, and getting it ready to publish.
           </p>
           <p>
-            My goal is to become a professional game developer, join a
-            creative team, and contribute to building fun and meaningful games
-            for everyone.
+            I graduated from Ho Chi Minh City University of Technology
+            (HCMUT) with a Bachelor's degree, classification Very Good. My goal is to keep growing as a
+            professional game developer and to help build fun, polished games
+            for players everywhere.
           </p>
           <div class="about-stats">
             <div class="stat">
-              <h3>3+</h3>
-              <p>Months learning Unity</p>
+              <h3>9+</h3>
+              <p>Months with Unity</p>
+            </div>
+            <div class="stat">
+              <h3>6+</h3>
+              <p>Months at MGIF</p>
+            </div>
+            <div class="stat">
+              <h3>4+</h3>
+              <p>Games shipped</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <!-- Add new companies above this one (newest first) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Game Developer</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> MGIF</p>
+              </div>
+              <span class="timeline-period">May 2026 – Present · 6 months</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Shipped 4 mobile games to Google Play: 3 in Unity (2D casual / puzzle) and 1 in Godot 4 .NET (3D parkour).</li>
+              <li>Main developer on every project, from setup and core gameplay to UI, level production and release builds.</li>
+              <li>Built in-editor level design and level generation tools to speed up content production.</li>
+              <li>Integrated the company's SDK stack: ad mediation (AppLovin MAX, AdMob), Firebase Analytics, Remote Config, Crashlytics, AppsFlyer and GDPR consent.</li>
+              <li>Worked with artists and the tech lead through Git/GitLab, and optimized builds for low-end Android devices.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">Godot</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Mobile</span>
+              <span class="tech-tag">Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- ===================== COMPANY PROJECTS ===================== -->
+      <h3 class="projects-group-title"><i class="fas fa-briefcase"></i> Company Projects</h3>
+
+      <!-- One block per company (newest company first).
+           Inside each company, projects are sorted newest first. -->
+      <div class="company-block">
+        <div class="company-header">
+          <h4>MGIF</h4>
+          <span>Game Developer · May 2026 – Present</span>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Keyboard Runner: Speed Obby 3D (KeyboardEscape) -->
+          <div class="project-card">
+            <div class="project-image" data-title="Keyboard Runner: Speed Obby 3D">
+              <!-- Put files in multimedia/keyboardescape/: main.png (thumbnail) + demo.mp4 (video) -->
+              <img src="multimedia/keyboardescape/main.png" alt="Keyboard Runner: Speed Obby 3D screenshot"
+                onerror="this.parentElement.classList.add('no-thumb'); this.remove();" />
+              <video src="multimedia/keyboardescape/demo.mp4" muted playsinline preload="metadata" loop
+                webkit-playsinline onerror="this.closest('.project-card').classList.add('no-video');"></video>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-period"><i class="far fa-calendar"></i> Oct 2026 – Present</span>
+                <span class="project-role">Solo Developer</span>
+              </div>
+              <h3>Keyboard Runner: Speed Obby 3D</h3>
+              <p class="project-codename">Codename: KeyboardEscape · Godot 4 .NET · 3D</p>
+              <p>
+                A 3D mobile parkour runner across giant mechanical keyboards: every key
+                the character steps on presses down and clicks.
+              </p>
+              <ul class="project-list">
+                <li>Built the whole game alone in Godot 4 .NET (C#), about 40k lines of code.</li>
+                <li>Key press system with MultiMesh keyboards and merged static collision, analog joystick movement and AI bot runners.</li>
+                <li>3 game modes: Speed Keyboard (3 themed worlds with hazards), Easy Obby (checkpoint stages) and Splash Tower.</li>
+                <li>Meta systems: skin and trail shop, rebirth, daily rewards, rewarded-ad unlocks and a first-run tutorial.</li>
+                <li>3D pipeline: character and keycaps generated with Blender Python scripts, Mixamo animations retargeted.</li>
+                <li>Android performance: GL Compatibility renderer, device tiering, 60 FPS lock; integrated AdMob, AppLovin MAX, AppsFlyer and Firebase.</li>
+              </ul>
+              <div class="project-links-row">
+                <!-- TODO: replace "#" with the Google Play link -->
+                <a href="#" target="_blank" rel="noopener" class="project-btn"><i class="fab fa-google-play"></i> Play the game</a>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Godot 4</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Blender</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">AppLovin MAX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Glow Makeover: Cleaning ASMR (PerfectMakeover) -->
+          <div class="project-card">
+            <div class="project-image" data-title="Glow Makeover: Cleaning ASMR">
+              <!-- Put files in multimedia/perfectmakeover/: main.png (thumbnail) + demo.mp4 (video) -->
+              <img src="multimedia/perfectmakeover/main.png" alt="Glow Makeover: Cleaning ASMR screenshot"
+                onerror="this.parentElement.classList.add('no-thumb'); this.remove();" />
+              <video src="multimedia/perfectmakeover/demo.mp4" muted playsinline preload="metadata" loop
+                webkit-playsinline onerror="this.closest('.project-card').classList.add('no-video');"></video>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-period"><i class="far fa-calendar"></i> Jul 2026 – Aug 2026 · ~4 weeks</span>
+                <span class="project-role">Main Developer</span>
+              </div>
+              <h3>Glow Makeover: Cleaning ASMR</h3>
+              <p class="project-codename">Codename: PerfectMakeover · Unity · 2D</p>
+              <p>
+                A satisfying cleaning ASMR game: scrub, peel, spray and tidy up
+                each scene with a set of tools.
+              </p>
+              <ul class="project-list">
+                <li>Built the project from scratch to 30 fully polished levels.</li>
+                <li>Cleaning mechanics as reveal strategies (brush, peel, spray, drag-trash, place-item) plus zone wiping by collider detection.</li>
+                <li>Level authoring tools in the Unity Editor, camera pan/zoom per level step, a tool picker and haptic feedback.</li>
+                <li>Service-based architecture with VContainer dependency injection, Addressables loading and a save system.</li>
+                <li>Tutorial hand guide, Spine animations, VFX and SFX; ad mediation, Firebase tracking, Remote Config and no-internet handling.</li>
+              </ul>
+              <div class="project-links-row">
+                <!-- TODO: replace "#" with the Google Play link -->
+                <a href="#" target="_blank" rel="noopener" class="project-btn"><i class="fab fa-google-play"></i> Play the game</a>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">VContainer</span>
+                <span class="tech-tag">Addressables</span>
+                <span class="tech-tag">Spine</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Match Mahjong: Slide Puzzle (MahjongSlide) -->
+          <div class="project-card">
+            <div class="project-image" data-title="Match Mahjong: Slide Puzzle">
+              <!-- Put files in multimedia/mahjongslide/: main.png (thumbnail) + demo.mp4 (video) -->
+              <img src="multimedia/mahjongslide/main.png" alt="Match Mahjong: Slide Puzzle screenshot"
+                onerror="this.parentElement.classList.add('no-thumb'); this.remove();" />
+              <video src="multimedia/mahjongslide/demo.mp4" muted playsinline preload="metadata" loop
+                webkit-playsinline onerror="this.closest('.project-card').classList.add('no-video');"></video>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-period"><i class="far fa-calendar"></i> Jun 2026 – Jul 2026 · ~3 weeks</span>
+                <span class="project-role">Solo Developer</span>
+              </div>
+              <h3>Match Mahjong: Slide Puzzle</h3>
+              <p class="project-codename">Codename: MahjongSlide · Unity · 2D</p>
+              <p>
+                A mahjong puzzle where players slide rows of tiles to line up and
+                clear matching pairs.
+              </p>
+              <ul class="project-list">
+                <li>Developed the game alone, from the first commit to the release build.</li>
+                <li>Core slide-and-match gameplay with drag input, match resolution and score combos.</li>
+                <li>Seeded board generators for each difficulty (Normal / Hard / Expert) with a solver that guarantees solvable boards, plus hints and reshuffle.</li>
+                <li>Tutorial, player statistics, themes, settings, transitions and VFX polish.</li>
+                <li>Performance with UniTask, ZString and object pooling; ads, analytics, Remote Config, EU consent and in-app review.</li>
+              </ul>
+              <div class="project-links-row">
+                <!-- TODO: replace "#" with the Google Play link -->
+                <a href="#" target="_blank" rel="noopener" class="project-btn"><i class="fab fa-google-play"></i> Play the game</a>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">UniTask</span>
+                <span class="tech-tag">Procedural Generation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Food Sizzle: Grill Match Game (FoodieSizzle) -->
+          <div class="project-card">
+            <div class="project-image" data-title="Food Sizzle: Grill Match Game">
+              <!-- Put files in multimedia/foodiesizzle/: main.png (thumbnail) + demo.mp4 (video) -->
+              <img src="multimedia/foodiesizzle/main.png" alt="Food Sizzle: Grill Match Game screenshot"
+                onerror="this.parentElement.classList.add('no-thumb'); this.remove();" />
+              <video src="multimedia/foodiesizzle/demo.mp4" muted playsinline preload="metadata" loop
+                webkit-playsinline onerror="this.closest('.project-card').classList.add('no-video');"></video>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-period"><i class="far fa-calendar"></i> Jun 2026 · ~3 weeks</span>
+                <span class="project-role">Main Developer</span>
+              </div>
+              <h3>Food Sizzle: Grill Match Game</h3>
+              <p class="project-codename">Codename: FoodieSizzle · Unity · 2D</p>
+              <p>
+                A casual match-and-sort game: arrange skewers on the grill to
+                complete customer orders before time runs out.
+              </p>
+              <ul class="project-list">
+                <li>Implemented the core gameplay: grills, skewers, conveyor, hidden grills, orders, timer and hearts.</li>
+                <li>Boosters (Auto Match, Ice Breaker, Shuffle and more) with Spine feature-introduction animations.</li>
+                <li>Built a level design editor with automatic board generation, then designed and shipped 50 levels, including Hard and Super Hard levels.</li>
+                <li>Game UI and popups (out of time, refill coins/hearts, missed order, win/lose), adapted to many screen sizes.</li>
+                <li>Integrated ad mediation, Firebase Analytics, Remote Config and consent; designed the Addressables bootstrap and loading flow.</li>
+              </ul>
+              <div class="project-links-row">
+                <!-- TODO: replace "#" with the Google Play link -->
+                <a href="#" target="_blank" rel="noopener" class="project-btn"><i class="fab fa-google-play"></i> Play the game</a>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Spine</span>
+                <span class="tech-tag">Addressables</span>
+                <span class="tech-tag">Editor Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== PERSONAL PROJECTS ===================== -->
+      <h3 class="projects-group-title"><i class="fas fa-user"></i> Personal Projects</h3>
+
+      <div class="projects-grid">
+        <!-- Pixel Destruction -->
+        <div class="project-card">
+          <div class="project-image" data-title="Pixel Destruction">
+            <img src="multimedia/pd/main.png" alt="Pixel Destruction screenshot"
+              onerror="this.parentElement.classList.add('no-thumb'); this.remove();" />
+            <video src="multimedia/pd/pd.mp4" muted playsinline preload="metadata" loop webkit-playsinline
+              onerror="this.closest('.project-card').classList.add('no-video');"></video>
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period"><i class="far fa-calendar"></i> Mar 2026 – Apr 2026</span>
+              <span class="project-role">Personal</span>
+            </div>
+            <h3>Pixel Destruction</h3>
+            <p>A casual time-killer game, and my first complete game made in Unity.</p>
+            <div class="project-links-row">
+              <a href="https://github.com/giomuatunhien/2026-PixelDestruction" target="_blank" rel="noopener"
+                class="project-btn"><i class="fab fa-github"></i> Source code</a>
+              <a href="https://drive.google.com/file/d/1qKmIa4OrvaKxaFc5B9DjxZPVHi3flXQo/view?usp=sharing"
+                target="_blank" rel="noopener" class="project-btn"><i class="fas fa-play"></i> Demo</a>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
             </div>
           </div>
         </div>
@@ -104,114 +366,74 @@
       <h2 class="section-title">My Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>PROGRAMMING LANGUAGES</h3>
+          <h3>Programming Languages</h3>
           <div class="skill-items">
-            <div class="skill-item">
-              <i class="devicon-c-plain colored" style="font-size: 24px"></i>
-              <span>C/C++</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-csharp-plain colored" style="font-size: 24px"></i>
-              <span>C#</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-python-plain colored" style="font-size: 24px"></i>
-              <span>Python</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-microsoftsqlserver-plain colored" style="font-size: 24px"></i>
-              <span>SQL Server</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-nodejs-plain colored" style="font-size: 24px"></i>
-              <span>Node.js</span>
-            </div>
+            <div class="skill-item"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+            <div class="skill-item"><i class="devicon-c-plain colored"></i><span>C/C++</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="skill-item"><i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL</span></div>
+            <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3>Tools & Others</h3>
+          <h3>Game Engines &amp; Frameworks</h3>
           <div class="skill-items">
-            <div class="skill-item">
-              <i class="fab fa-git-alt"></i>
-              <span>Git</span>
-            </div>
-            <div class="skill-item">
-              <i class="fab fa-github"></i>
-              <span>GitHub</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-postman-plain colored" style="font-size: 24px"></i>
-              <span>Postman</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-postgresql-plain colored" style="font-size: 24px"></i>
-              <span>PostgreSQL</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-unity-plain colored" style="font-size: 24px"></i>
-              <span>Unity</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-sdl-plain colored" style="font-size: 24px"></i>
-              <span>SDL2</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-cocos2d-plain colored" style="font-size: 24px"></i>
-              <span>cocos2d</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-virtualbox-plain colored" style="font-size: 24px"></i>
-              <span>VirtualBox</span>
-            </div>
-            <div class="skill-item">
-              <i class="devicon-pygame-plain colored" style="font-size: 24px"></i>
-              <span>PyGame</span>
-            </div>
+            <div class="skill-item"><i class="devicon-unity-plain colored"></i><span>Unity</span></div>
+            <div class="skill-item"><i class="devicon-godot-plain colored"></i><span>Godot 4</span></div>
+            <div class="skill-item"><i class="fas fa-bone"></i><span>Spine</span></div>
+            <div class="skill-item"><i class="fas fa-layer-group"></i><span>Addressables</span></div>
+            <div class="skill-item"><i class="fas fa-bolt"></i><span>UniTask</span></div>
+            <div class="skill-item"><i class="fas fa-diagram-project"></i><span>VContainer (DI)</span></div>
+            <div class="skill-item"><i class="fas fa-wave-square"></i><span>DOTween</span></div>
+            <div class="skill-item"><i class="fas fa-palette"></i><span>URP</span></div>
+            <div class="skill-item"><i class="devicon-sdl-plain colored"></i><span>SDL2</span></div>
+            <div class="skill-item"><i class="fas fa-shapes"></i><span>cocos2d</span></div>
+            <div class="skill-item"><i class="fas fa-gamepad"></i><span>PyGame</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Mobile &amp; Live Ops</h3>
+          <div class="skill-items">
+            <div class="skill-item"><i class="devicon-android-plain colored"></i><span>Android Build</span></div>
+            <div class="skill-item"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
+            <div class="skill-item"><i class="fas fa-rectangle-ad"></i><span>AppLovin MAX</span></div>
+            <div class="skill-item"><i class="fas fa-ad"></i><span>AdMob</span></div>
+            <div class="skill-item"><i class="fas fa-chart-line"></i><span>AppsFlyer</span></div>
+            <div class="skill-item"><i class="fas fa-sliders"></i><span>Remote Config</span></div>
+            <div class="skill-item"><i class="fas fa-gauge-high"></i><span>Mobile Optimization</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools &amp; Others</h3>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+            <div class="skill-item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+            <div class="skill-item"><i class="devicon-blender-original colored"></i><span>Blender</span></div>
+            <div class="skill-item"><i class="fas fa-screwdriver-wrench"></i><span>Editor Tooling</span></div>
+            <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+            <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+            <div class="skill-item"><i class="fas fa-server"></i><span>VirtualBox</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
+  <!-- Education Section -->
+  <section id="education" class="education">
     <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="multimedia/pd/main.png" alt="Luân Hành Tứ Giới Screenshot"
-              onerror="this.src='https://via.placeholder.com/640x360/444/fff?text=Game+Screenshot'" />
-            <!-- Video preview (sẽ phát khi hover) -->
-            <video src="multimedia/pd/pd.mp4" muted playsinline preload="auto" loop webkit-playsinline></video>
-            <div class="project-overlay"></div>
-          </div>
-          <div class="project-content">
-            <h3>Pixel destruction</h3>
-            <p>
-              Game casual giết thời gian<br />
-              <!-- <a href="https://your-game-link.com" target="_blank" style="
-                    color: var(--primary-color);
-                    text-decoration: underline;
-                  ">Chơi thử game</a>
-              &nbsp;|&nbsp; -->
-              <a href="https://github.com/giomuatunhien/UnityGame-PixelDestruction" target="_blank" style="
-                    color: var(--primary-color);
-                    text-decoration: underline;
-                  ">Xem mã nguồn</a>
-              &nbsp;|&nbsp;
-              <a href="https://drive.google.com/file/d/1qKmIa4OrvaKxaFc5B9DjxZPVHi3flXQo/view?usp=sharing"
-                target="_blank" style="
-                    color: var(--primary-color);
-                    text-decoration: underline;
-                  ">Demo</a>
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Unity</span>
-              <span class="tech-tag">C#</span>
-            </div>
-          </div>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-body">
+          <h3>Ho Chi Minh City University of Technology (HCMUT)</h3>
+          <p class="edu-sub">Vietnam National University – Ho Chi Minh City</p>
+          <p class="edu-degree">Bachelor's Degree · Classification: <strong>Very Good</strong></p>
+          <span class="timeline-period">2022 – 2026</span>
         </div>
       </div>
     </div>
@@ -290,13 +512,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2025 Đồng Mạnh Cường. All rights reserved.</p>
+        <p>&copy; 2026 Đồng Mạnh Cường. All rights reserved.</p>
         <div class="social-links">
           <a href="https://github.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/cuong23204" target="_blank" rel="noopener"><i
               class="fab fa-linkedin"></i></a>
-          <!-- <a href="https://twitter.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com/giomuatunhien" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a> -->
         </div>
       </div>
     </div>
@@ -307,7 +527,7 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function () {
-      emailjs.init("UQEZevo52VPOirnpR"); // Thay YOUR_EMAILJS_USER_ID bằng user ID của bạn trên emailjs.com
+      emailjs.init("UQEZevo52VPOirnpR");
     })();
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -315,11 +535,9 @@
       if (contactForm) {
         contactForm.addEventListener("submit", function (e) {
           e.preventDefault();
-          // Xác nhận popup
-          if (!confirm("Bạn có chắc chắn muốn gửi tin nhắn này?")) {
+          if (!confirm("Are you sure you want to send this message?")) {
             return;
           }
-          // Lấy dữ liệu form
           const formData = new FormData(this);
           const params = {
             name: formData.get("name"),
@@ -327,14 +545,13 @@
             subject: formData.get("subject"),
             message: formData.get("message"),
           };
-          // Gửi qua EmailJS
           emailjs.send("service_azaga1u", "template_w3dst0n", params).then(
-            function (response) {
-              alert("Tin nhắn đã được gửi thành công!");
+            function () {
+              alert("Your message has been sent successfully!");
               contactForm.reset();
             },
-            function (error) {
-              alert("Gửi thất bại. Vui lòng thử lại sau!");
+            function () {
+              alert("Sending failed. Please try again later!");
             }
           );
         });
